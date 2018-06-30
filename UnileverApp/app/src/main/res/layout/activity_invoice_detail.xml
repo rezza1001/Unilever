@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InvoiceDetailActivity">
+
+    <include
+        android:id="@+id/incl_header"
+        layout="@layout/header_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_below="@+id/incl_header"
+        android:layout_above="@+id/bbtn_action_00"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingRight="@dimen/size_10dp"
+            android:paddingLeft="@dimen/size_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:background="@color/text_grey"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/size_10dp"
+                android:layout_height="@dimen/size_1dp"/>
+
+            <g.rezza.moch.unileverapp.component.TextKeyValue
+                android:id="@+id/txkv_invoice_00"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <g.rezza.moch.unileverapp.component.TextKeyValue
+                android:id="@+id/txkv_invdate_00"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <g.rezza.moch.unileverapp.component.TextKeyValue
+                android:id="@+id/txkv_invduedate_00"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <g.rezza.moch.unileverapp.component.TextKeyValue
+                android:id="@+id/txkv_order_00"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <g.rezza.moch.unileverapp.component.TextKeyValue
+                android:id="@+id/txkv_date_order_00"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <g.rezza.moch.unileverapp.component.TextKeyValue
+                android:id="@+id/txkv_status_00"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <g.rezza.moch.unileverapp.component.TextKeyValue
+                android:id="@+id/txkv_discount_00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <g.rezza.moch.unileverapp.component.TextKeyValue
+                android:id="@+id/txkv_total_00"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <g.rezza.moch.unileverapp.component.TextKeyValue
+                android:id="@+id/txkv_payment_00"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <g.rezza.moch.unileverapp.component.TextKeyValue
+                android:id="@+id/txkv_note_00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bbtn_action_00"
+        android:textColor="@color/white_00"
+        android:layout_margin="@dimen/size_10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_signin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:textAllCaps="false"
+        android:textSize="@dimen/size_16sp"
+        android:text="Bayar Sekarang" />
+
+</RelativeLayout>

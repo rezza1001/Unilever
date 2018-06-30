@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:paddingTop="@dimen/size_10dp"
+        android:paddingBottom="@dimen/size_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:paddingRight="@dimen/size_5dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/txvw_title_00"
+                    android:fontFamily="sans-serif"
+                    android:textSize="@dimen/size_14sp"
+                    android:textColor="@color/text_black"
+                    android:gravity="left"
+                    android:text="Product Name"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txvw_qty_00"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/size_14sp"
+                    android:gravity="center"
+                    android:text="100X"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txvw_price_00"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/size_14sp"
+                    android:gravity="left"
+                    android:text="Rp. 400,000"
+                    android:layout_weight="2.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txvw_total_00"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/size_14sp"
+                    android:gravity="right"
+                    android:text="Rp. 400,000"
+                    android:layout_weight="3.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/size_5dp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:padding="@dimen/size_10dp"
+        android:id="@+id/rvly_param_00"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/bbtn_sort_00"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/button_black_rl"
+        android:layout_height="@dimen/size_40dp">
+            <ImageView
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size_5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_sort" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_14sp"
+                android:text="SORT" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bbtn_filter_00"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/size_1dp"
+            android:layout_marginRight="@dimen/size_1dp"
+            android:background="@drawable/button_black"
+            android:layout_height="@dimen/size_40dp">
+            <ImageView
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:layout_marginRight="@dimen/size_5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_filter" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FILTER"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_14sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bbtn_list_00"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/button_black_rr"
+            android:layout_height="@dimen/size_40dp">
+
+            <ImageView
+                android:id="@+id/imvw_option_00"
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_grid" />
+            <TextView
+                android:id="@+id/txvw_option_00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_14sp"
+                android:text="GRID" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rvly_body_00"
+        android:padding="@dimen/size_10dp"
+        android:layout_below="@+id/rvly_param_00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/lsvw_product_00"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <GridView
+            android:id="@+id/grvw_product_00"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="fill"
+            android:numColumns="auto_fit"
+            android:columnWidth="@dimen/size_150dp"
+            android:horizontalSpacing="@dimen/size_5dp"
+            android:verticalSpacing="@dimen/size_10dp"
+            android:stretchMode="columnWidth" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
